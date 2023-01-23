@@ -9,12 +9,16 @@
 }
 
 .quoteBox { 
-  background-color: white;
+  font-family: 'Dancing Script', cursive;
+  background-color: rgb(255, 255, 255);
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 3px;
   max-width: 600px;
   position: relative;
   box-shadow: 2px 2px 10px #0005;
+  transition: all ;
+  transition: transform 500ms ease;
+
 }
 
 .quoteBox__author {
@@ -24,17 +28,17 @@
 
 .quoteBox__icon {
   position: absolute;
-  bottom: 12px;
-  left: 12px;
-  font-size: 55px;
+  bottom: 10px;
+  left: 10px;
+  font-size: 40px;
 }
 
 .quoteBox__button {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   border: none;
-  border-radius: 50%;
-  width: 50px;
+  border-radius: 10%;
+  width: 35px;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
@@ -45,5 +49,12 @@
 }
 
 .quoteBox__button:hover {
+  transform: scale(1.2);
+}
+p.quoteBox__quote {
+  font-family: 'Dancing Script', cursive;
+  text-shadow:88, 1px 1px 10px rgb(0, 0, 0);
+}
+.quoteBox:hover {
   transform: scale(1.1);
 }
